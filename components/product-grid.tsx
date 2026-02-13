@@ -28,7 +28,7 @@ const SAMPLE_PRODUCTS: Product[] = [
     id: "2",
     name: "Capital One Credit Card",
     price: 75,
-    image: "	https://1000logos.net/wp-content/uploads/2018/11/Capital-One-Logo.jpg",
+    image: "https://ecm.capitalone.com/WCM/card/products/plat_cardart_prim_323x203/mobile.png",
     description: "Capital One Credit Card - $60 Balance",
     rating: 4.7,
   },
