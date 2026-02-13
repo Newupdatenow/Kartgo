@@ -280,7 +280,7 @@ const ALL_PRODUCTS = [
   {
     id: "25",
     name: "Regions Bank Logs",
-    price: 200,
+    price: 210,
     amount: "10k-30k",
     image: "https://images.seeklogo.com/logo-png/40/1/regions-bank-logo-png_seeklogo-402507.png",
     category: "Finance",
