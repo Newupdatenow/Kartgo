@@ -80,7 +80,7 @@ const ALL_PRODUCTS = [
   {
     id: "7",
     name: "Discovery Bank Credit Card",
-    price: 100,
+    price: "Sold-out",
     amount: "$600",
     image: "	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEekOSAerEaNBuxM0hIMbN0bUYFY7Ta0En_w&s",
     category: "Finance",
@@ -91,7 +91,7 @@ const ALL_PRODUCTS = [
   {
     id: "8",
     name: "Discovery Bank Credit Card",
-    price: 150,
+    price: "Sold-Out",
     amount: "$666",
     image: "	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEekOSAerEaNBuxM0hIMbN0bUYFY7Ta0En_w&s",
     category: "Finance",
@@ -124,7 +124,7 @@ const ALL_PRODUCTS = [
   {
     id: "11",
     name: "Citi Bank Credit Card",
-    price: 120,
+    price: "Sold-Out",
     amount: "$666",
     image: "https://www.shutterstock.com/image-photo/ranchiind…june-29-2023closeup-citibank-600nw-2408305117.jpg",
     category: "Finance",
@@ -146,7 +146,7 @@ const ALL_PRODUCTS = [
   {
     id: "13",
     name: "Mercury Credit Card",
-    price: 75,
+    price: "Sold-Out",
     amount: "$500",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnU0UKEVDfhrw5yXQ_pEa9WRc-0ZYc1Xssw&s",
     category: "App & Services",
@@ -157,7 +157,7 @@ const ALL_PRODUCTS = [
   {
     id: "14",
     name: "Mercury Credit Card",
-    price: 100,
+    price: "Sold-Out",
     amount: "$500",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnU0UKEVDfhrw5yXQ_pEa9WRc-0ZYc1Xssw&s",
     category: "App & Services",
@@ -168,7 +168,7 @@ const ALL_PRODUCTS = [
   {
     id: "15",
     name: "Mercury Credit Card",
-    price: 100,
+    price: "Sold-Out",
     amount: "$700",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnU0UKEVDfhrw5yXQ_pEa9WRc-0ZYc1Xssw&s",
     category: "App & Services",
