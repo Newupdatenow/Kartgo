@@ -78,16 +78,17 @@ const ALL_PRODUCTS = [
     subcategory: "Credit Cards",
   },
   {
-    id: "7",
-    name: "Discovery Bank Credit Card",
-    price: "Sold-out",
-    amount: "$600",
-    image: "	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEekOSAerEaNBuxM0hIMbN0bUYFY7Ta0En_w&s",
-    category: "Finance",
-    rating: 4.9,
-    description: "Discovery Bank Credit Card - $600 Balance",
-    subcategory: "Credit Cards",
-  },
+  id: "7",
+  name: "Discovery Bank Credit Card",
+  price: 600,
+  amount: "$600",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEekOSAerEaNBuxM0hIMbN0bUYFY7Ta0En_w&s",
+  category: "Finance",
+  rating: 4.9,
+  description: "Discovery Bank Credit Card - $600 Balance",
+  subcategory: "Credit Cards",
+  soldOut: true,  // Add this flag
+},
   {
     id: "8",
     name: "Discovery Bank Credit Card",
@@ -98,6 +99,7 @@ const ALL_PRODUCTS = [
     rating: 4.9,
     description: "Discovery Bank Credit Card - $666 Balance",
     subcategory: "Credit Cards",
+    soldOut: true,  // Add this flag
   },
   {
     id: "9",
@@ -153,6 +155,7 @@ const ALL_PRODUCTS = [
     rating: 4.6,
     description: "Mercury Credit Card - $500 Balance",
     subcategory: "Credit Cards",
+    soldOut: true,  // Add this flag
   },
   {
     id: "14",
@@ -164,6 +167,7 @@ const ALL_PRODUCTS = [
     rating: 4.6,
     description: "Mercury Credit Card - $500 Balance",
     subcategory: "Credit Cards",
+    soldOut: true,  // Add this flag
   },
   {
     id: "15",
@@ -175,6 +179,7 @@ const ALL_PRODUCTS = [
     rating: 4.6,
     description: "Mercury Credit Card - $700 Balance",
     subcategory: "Credit Cards",
+    soldOut: true,  // Add this flag
   },
 
   // Bank Logs Section
@@ -515,9 +520,13 @@ export default function ShopPage() {
                           </div>
                           <span className="text-xs text-muted-foreground">{product.rating}</span>
                         </div>
-
                         <div className="flex items-center justify-between gap-3">
-                          <span className="text-2xl font-bold text-primary">${product.price.toFixed(2)}</span>
+<span className={`text-2xl font-bold ${product.soldOut ? "text-red-500" : "text-primary"}`}>
+  {product.soldOut 
+    ? "SOLD OUT" 
+    : `$${typeof product.price === 'number' ? product.price.toFixed(2) : product.price}`
+  }
+</span>
                           <Button
                             onClick={() => handleAddToCart(product)}
                             className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
